@@ -41,5 +41,10 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Hardhat
+build
+.env
+*.js.md
+
 # Custom
 *.git-credentials

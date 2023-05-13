@@ -1,13 +1,18 @@
 {
   "name": "sample-erc20",
   "version": "1.0.1",
+  "author": "Haitham DAWOUD",
   "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:goerli": "npm run migrate -- --network goerli",
+    "test:contract": "truffle test ./test/Token.spec.js --network goerli",
     "ng": "ng",
     "start": "ng serve --port 4240",
     "start:dev": "npm run start -- --configuration=development",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test:front": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -29,14 +34,17 @@
     "@angular-devkit/build-angular": "^15.0.0",
     "@angular/cli": "^15.0.0",
     "@angular/compiler-cli": "^15.0.0",
+    "@truffle/hdwallet-provider": "^2.1.1",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "dotenv": "^16.0.3",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "truffle": "^5.6.6",
     "typescript": "~4.8.4"
   }
 }
