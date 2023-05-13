@@ -1,5 +1,5 @@
 {
-  "name": "erc20-sample-front-end",
+  "name": "sample-erc20-front-end",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
