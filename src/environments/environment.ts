@@ -2,8 +2,23 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+import { TEnvironment } from "./enviroment.type";
+
+import abi from '../assets/abi.json';
+
+
+export const environment: TEnvironment = {
+  production: false,
+  configuration: {
+    core: {
+      chainId: 0x5
+    },
+    shared: {
+      abi,
+      addressContract: '0x97336F30A97373438857541779a7b5A19cDEA9f6',
+      networkId: 0x5
+    }
+  }
 };
 
 /*
