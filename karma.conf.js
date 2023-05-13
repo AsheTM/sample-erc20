@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/erc20-sample-front-end'),
+      dir: require('path').join(__dirname, './coverage/front'),
       subdir: '.',
       reporters: [
         { type: 'html' },
