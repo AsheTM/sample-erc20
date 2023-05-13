@@ -15,7 +15,7 @@ export const environment: TEnvironment = {
     },
     shared: {
       abi,
-      addressContract: '0x97336F30A97373438857541779a7b5A19cDEA9f6',
+      addressContract: process.env.NG_APP_CONTRACT_ADDRESS,
       networkId: 0x5
     }
   }
