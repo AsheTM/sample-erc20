@@ -60,8 +60,12 @@
   <ng-container [ngSwitch]="true">
     <ng-container *ngSwitchCase="!(isAppropriateNetwork$ | async)"
       [ngTemplateOutlet]="InappropriateNetworkTemplate"></ng-container>
+
+    <ng-container *ngSwitchCase="isConnected$ | async"
+      [ngTemplateOutlet]="LaunchPadTemplate"></ng-container>
+
     <ng-container *ngSwitchDefault
-      [ngTemplateOutlet]="(isConnected$ | async) ? LaunchPadTemplate : ConnectButtonTemplate"></ng-container>
+      [ngTemplateOutlet]="ConnectButtonTemplate"></ng-container>
   </ng-container>
 
   <ng-template #InappropriateNetworkTemplate>
