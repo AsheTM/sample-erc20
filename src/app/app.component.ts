@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { TContractFunction } from '@ashetm/ng-ether';
 import { Observable } from 'rxjs';
 
 import { ETransactionStatus } from './app.enum';
