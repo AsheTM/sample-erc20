@@ -1,6 +1,6 @@
 {
   "name": "sample-erc20",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Haitham DAWOUD",
   "scripts": {
     "compile": "truffle compile",
